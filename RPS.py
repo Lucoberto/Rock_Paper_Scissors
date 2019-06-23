@@ -27,6 +27,7 @@ def your_turn():
     print(R+'['+O+'1'+R+'] '+C+'Scissors.'+W)
     print(R+'['+O+'2'+R+'] '+C+'Rock.'+W)
     print(R+'['+O+'3'+R+'] '+C+'Paper.'+W)
+    print(R+'['+O+'3'+R+'] '+C+'Return.'+W)
     op = input(O+"choose your action: "+W)
     if op == "scissors":
         menuac="RPS"
@@ -34,8 +35,8 @@ def your_turn():
         menuac="RPS"
     elif op == "paper":
         menuac="RPS"
-
-
+    elif op == "return":
+        menuac="menu"
 #se almazena la decision de el jugador
 op=""
 #segenera uno entre los tres ascii art al azar y se compara con la decision del jugador
@@ -49,8 +50,6 @@ def RPS():
            (____)
     ---.__(___)
     """
-
-
     paper="""
         _______
     ---'    ____)_
@@ -59,8 +58,6 @@ def RPS():
             _______)
     ---.__________)
     """
-
-
     scissors="""
         _______
     ---'   ____)__
@@ -111,7 +108,6 @@ def RPS():
         print(rock)
         print(O+'You won'+R+' killing '+O+'a '+P+'Rock'+W)
         menuac="your_turn"
-
 def credits_():
     global menuac
     print(O+'Developed by '+C+'@Lucoberto'+W)
@@ -122,12 +118,6 @@ def credits_():
     op=input(O+"choose an option: "+W)
     if op == "return":
         menuac="menu"
-
-
-
-
-
-
 def func():
     try:
         while True:
