@@ -11,7 +11,7 @@ def menu():
     global menuac
     print(R+'['+O+'+'+R+'] '+C+'Options.'+W)
     print(R+'['+O+'1'+R+'] '+C+'Play.'+W)
-    print(R+'['+O+'2'+R+'] '+C+'credits.'+W)
+    print(R+'['+O+'2'+R+'] '+C+'Credits.'+W)
     print(R+'['+O+'3'+R+'] '+C+'Exit.'+W)
     op=input(O+"choose an option: "+W)
     if op == "play":
