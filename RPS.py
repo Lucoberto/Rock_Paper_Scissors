@@ -70,41 +70,41 @@ def RPS():
     decision=random.choice(lista)
 #consecuencia tijera
     if op == "scissors" and decision == rock:
-        print(rock)
+        print(R+rock+W)
         print(R+'You loses because of a '+P+'Rock'+W)
         menuac="your_turn"
     elif op == "scissors" and decision == paper:
-        print(paper)
+        print(O+paper+W)
         print(O+'You won'+R+' killing '+O+'a '+P+'Paper'+W)
         menuac="your_turn"
     elif op == "scissors" and decision == scissors:
-        print(scissors)
+        print(G+scissors+W)
         print(G+'It seems to have been a draw'+W)
         menuac="your_turn"
 # Consecuencia roca
     elif op == "rock" and decision == scissors:
-        print(scissors)
+        print(O+scissors+W)
         print(O+'You won'+R+' killing '+O+'a '+P+'Scissors'+W)
         menuac="your_turn"
     elif op == "rock" and decision == paper:
-        print(paper)
+        print(R+paper+W)
         print(R+'You loses because of a '+P+'Paper'+W)
         menuac="your_turn"
     elif op == "rock" and decision == rock:
-        print(rock)
+        print(G+rock+W)
         print(G+'It seems to have been a draw'+W)
         menuac="your_turn"
 #Consecuencia de papel
     elif op == "paper" and decision == scissors:
-        print(scissors)
+        print(R+scissors+W)
         print(R+'You loses because of a '+P+'Scissors'+W)
         menuac="your_turn"
     elif op == "paper" and decision == paper:
-        print(paper)
+        print(G+paper+W)
         print(G+'It seems to have been a draw'+W)
         menuac="your_turn"
     elif op == "paper" and decision == rock:
-        print(rock)
+        print(O+rock+W)
         print(O+'You won'+R+' killing '+O+'a '+P+'Rock'+W)
         menuac="your_turn"
 
